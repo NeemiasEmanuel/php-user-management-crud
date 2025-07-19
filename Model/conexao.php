@@ -12,7 +12,7 @@ class Conexao{
 
 
         try{
-            $conn = new PDO("mysql:host=localhost;dbname=teste", 'root', 'luzdomundo1');
+            $conn = new PDO("mysql:host=localhost;dbname=teste", 'root', '');
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             echo "Conexão realizada com sucesso!";
             return $conn;
